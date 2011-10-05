@@ -1,0 +1,26 @@
+#compdef subtle
+
+# The MIT License (http://www.opensource.org/licenses/mit-license.php/)
+# Copyright © 2011 Kirill Silin <kyrylosilin@gmail.com>
+# Revision: r1
+#
+# Description:
+#   Zsh completion script for 'subtle', the Subtle Window Manager.
+#   For more info see Subforge (http://subforge.org/projects/subtle/wiki/Subtle/).
+#
+# Installation:
+#   Add this file to one of the directories in $fpath. To check these
+#   directories, write 'echo $fpath' in console.
+#
+
+_arguments \
+  '(-c --config)'{-c,--config}'[Load config]:subtle configuration file:_files -g "*.(rb|RB)"' \
+  '(-d --display)'{-d,--display}'[Connect to DISPLAY]' \
+  '(-)'{-h,--help}'[Show help information]' \
+  '(-k --check)'{-k,--check}'[Config check syntax]' \
+  '(-n --no-randr)'{-n,--no-randr}'[Disable RandR extension (required for Twinview)]' \
+  '(-r --replace)'{-r,--replace}'[Replace current window manager]' \
+  '(-s --sublets)'{-s,--sublets}'[Load sublets from DIR]:sublets directory:_files -/' \
+  '(-)'{-v,--version}'[Show version info]' \
+  '(-l --level)'{-l,--level=}'[Self logging level]' \
+  '(-D --debug)'{-D,--debug}'[Print debugging messages]'
