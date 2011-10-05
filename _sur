@@ -2,16 +2,16 @@
 
 # The MIT License (http://www.opensource.org/licenses/mit-license.php/)
 # Copyright © 2011 Kirill Silin <kyrylosilin@gmail.com>
-# Revision: r1
+# Revision: r2
 #
 # Description:
 #   Zsh completion script for 'sur', the Subtle WM's sublet manager.
 #   For more info see Subforge (http://subforge.org/projects/subtle/wiki/Subtle/)
 #
 # Installation:
+#   Add this file to one of the directories in $fpath. To check these
+#   directories, write 'echo $fpath' in console.
 #
-#
-# Other notes:
 
 _sur_command()
 {
