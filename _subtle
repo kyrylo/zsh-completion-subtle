@@ -2,7 +2,7 @@
 
 # The MIT License (http://www.opensource.org/licenses/mit-license.php/)
 # Copyright © 2011 Kirill Silin <kyrylosilin@gmail.com>
-# Revision: r1
+# Revision: r2
 #
 # Description:
 #   Zsh completion script for 'subtle', the Subtle Window Manager.
@@ -13,9 +13,22 @@
 #   directories, write 'echo $fpath' in console.
 #
 
+# Complete displays.
+#
+#   % subtle -d <TAB>
+#   :0 :1 :10
+#
+(( $+functions[_subtle_display] )) ||
+_subtle_display()
+{
+  local list expl displays
+  displays=$(ls /tmp/.X11-unix | sed 's/X/:/g' | egrep '^:')
+  _wanted list expl 'Available displays' compadd - ${(s: :)$(echo $displays)}
+}
+
 _arguments \
   '(-c --config)'{-c,--config}'[Load config]:subtle configuration file:_files -g "*.(rb|RB)"' \
-  '(-d --display)'{-d,--display}'[Connect to DISPLAY]' \
+  '(-d --display)'{-d,--display}'[Connect to DISPLAY]:display:_subtle_displays' \
   '(-)'{-h,--help}'[Show help information]' \
   '(-k --check)'{-k,--check}'[Config check syntax]' \
   '(-n --no-randr)'{-n,--no-randr}'[Disable RandR extension (required for Twinview)]' \
