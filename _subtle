@@ -2,11 +2,14 @@
 
 # The MIT License (http://www.opensource.org/licenses/mit-license.php/)
 # Copyright © 2011 Kirill Silin <kyrylosilin@gmail.com>
-# Revision: r2
+# Revision: r3
+#
+# Homepage:
+#   Repository: http://www.github.com/kyrylo/subtle-completion/
 #
 # Description:
 #   Zsh completion script for 'subtle', the Subtle Window Manager.
-#   For more info see Subforge (http://subforge.org/projects/subtle/wiki/Subtle/).
+#   For more info see Subforge (http://www.subforge.org/projects/subtle/wiki/Subtle/).
 #
 # Installation:
 #   Add this file to one of the directories in $fpath. To check these
