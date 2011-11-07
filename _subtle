@@ -2,7 +2,7 @@
 
 # The MIT License (http://www.opensource.org/licenses/mit-license.php/)
 # Copyright © 2011 Kirill Silin <kyrylosilin@gmail.com>
-# Revision: r3
+# Revision: r4
 #
 # Homepage:
 #   Repository: http://www.github.com/kyrylo/subtle-completion/
@@ -31,7 +31,7 @@ _subtle_display()
 
 _arguments \
   '(-c --config)'{-c,--config}'[Load config]:subtle configuration file:_files -g "*.(rb|RB)"' \
-  '(-d --display)'{-d,--display}'[Connect to DISPLAY]:display:_subtle_displays' \
+  '(-)'{-d,--display}'[Connect to DISPLAY]:display list:_subtle_display' \
   '(-)'{-h,--help}'[Show help information]' \
   '(-k --check)'{-k,--check}'[Config check syntax]' \
   '(-n --no-randr)'{-n,--no-randr}'[Disable RandR extension (required for Twinview)]' \
