@@ -4,7 +4,7 @@
 # Copyright © 2011 Kirill Silin <kyrylosilin@gmail.com>
 #
 # Homepage:
-#   Repository: http://www.github.com/kyrylo/subtle-completion/
+#   Repository: http://www.github.com/kyrylo/zsh-completion-subtle/
 #
 # Description:
 #   Zsh completion script for 'subtle', the Subtle Window Manager.
